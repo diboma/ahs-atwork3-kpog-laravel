@@ -1,0 +1,115 @@
+// Body
+// ----
+$body-bg: #f8fafc;
+
+// Typography
+// ----------
+// $font-family-sans-serif: 'Roboto', sans-serif;
+// $font-size-base: 0.9rem;
+// $line-height-base: 1.6;
+
+// Containers
+// ----------
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1020px,
+  xxl: 1040px,
+) !default;
+
+//Colors
+// -----
+$blue-100: #e4f1fa !default;
+$blue-200: #c2e3f5 !default;
+$blue-300: #8ccded !default;
+$blue-400: #4fb2e1 !default;
+$blue-500: #2899cf !default;
+$blue-600: #197bb0 !default;
+$blue-700: #16638e !default;
+$blue-800: #165477 !default;
+$blue-900: #184662 !default;
+
+$blue: $blue-800; // edited!
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+
+$gray-100: #f8f9fa !default;
+$gray-600: #6c757d !default;
+$gray-900: #212529 !default;
+
+$pinegreen: #16786b !default;
+$pinegreen-100: tint-color($pinegreen, 80%) !default;
+$pinegreen-200: tint-color($pinegreen, 60%) !default;
+$pinegreen-300: tint-color($pinegreen, 40%) !default;
+$pinegreen-400: tint-color($pinegreen, 20%) !default;
+$pinegreen-500: $pinegreen !default;
+$pinegreen-600: shade-color($pinegreen, 20%) !default;
+$pinegreen-700: shade-color($pinegreen, 40%) !default;
+$pinegreen-800: shade-color($pinegreen, 60%) !default;
+$pinegreen-900: shade-color($pinegreen, 80%) !default;
+
+$pinegreens: (
+  'pinegreen-100': $pinegreen-100,
+  'pinegreen-200': $pinegreen-200,
+  'pinegreen-300': $pinegreen-300,
+  'pinegreen-400': $pinegreen-400,
+  'pinegreen-500': $pinegreen-500,
+  'pinegreen-600': $pinegreen-600,
+  'pinegreen-700': $pinegreen-700,
+  'pinegreen-800': $pinegreen-800,
+  'pinegreen-900': $pinegreen-900,
+) !default;
+
+$brown: #783a16 !default;
+$brown-100: tint-color($brown, 80%) !default;
+$brown-200: tint-color($brown, 60%) !default;
+$brown-300: tint-color($brown, 40%) !default;
+$brown-400: tint-color($brown, 20%) !default;
+$brown-500: $brown !default;
+$brown-600: shade-color($brown, 20%) !default;
+$brown-700: shade-color($brown, 40%) !default;
+$brown-800: shade-color($brown, 60%) !default;
+$brown-900: shade-color($brown, 80%) !default;
+
+$browns: (
+  'brown-100': $brown-100,
+  'brown-200': $brown-200,
+  'brown-300': $brown-300,
+  'brown-400': $brown-400,
+  'brown-500': $brown-500,
+  'brown-600': $brown-600,
+  'brown-700': $brown-700,
+  'brown-800': $brown-800,
+  'brown-900': $brown-900,
+) !default;
+
+$primary: $blue;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+$theme-colors: (
+  'primary': $primary,
+  'primary-900': $blue-900,
+  'brown': $brown,
+  'accent': $pinegreen,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+) !default;

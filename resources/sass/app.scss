@@ -1,0 +1,94 @@
+// Fonts
+// -----
+// - install the fonts, e.g. npm install @fontsource/roboto
+// - import the fonts here,
+// - then add the font-family as a variable override, e.g.
+//   $font-family-sans-serif: 'Roboto', sans-serif;
+// ----------------------------------------------------------
+// @import '@fontsource/roboto';
+
+// Import variable overrides
+// -------------------------
+@import 'variables';
+
+// Import Bootstrap
+// ----------------
+@import 'bootstrap/scss/bootstrap';
+
+// Additional custom code
+// ----------------------
+.container {
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5.card-title {
+  color: $blue;
+}
+
+// Page block title
+.page-block-title {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+h1:after,
+.page-block-title::after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: $pinegreen;
+  margin: 1rem auto;
+}
+
+// Dropdown menu
+.dropdown-item:hover {
+  background-color: $gray-200;
+}
+
+.dropdown-item.active:hover {
+  background-color: $blue-900;
+}
+
+// Role button hover state
+[role='button'] {
+  transition: all 0.2s ease-in-out;
+}
+s [role='button']:active {
+  scale: 1.15;
+}
+
+// User cards
+a .card {
+  transition: all 0.2s ease-in-out;
+}
+
+a .card:hover {
+  scale: 1.025;
+}
+
+// Hide tinyMCE promotion
+.tox-promotion {
+  display: none;
+}
+
+// Photo container
+.photo-container.is-loading .btn-delete {
+  display: none;
+}
+.photo-container .btn-delete {
+  display: block;
+}
+
+.photo-container.is-loading .photo {
+  display: none;
+}
+.photo-container .photo {
+  display: block;
+}
